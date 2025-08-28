@@ -529,7 +529,7 @@ footer {
 /* Sterne für ausgewählte Karten */
 .star {
   position: absolute;
-  top: -35px;
+  top: -40px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
