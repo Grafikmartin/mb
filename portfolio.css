@@ -525,3 +525,28 @@ footer {
     transform: translateX(-50%) rotateY(360deg);
   }
 }
+
+/* Sterne für ausgewählte Karten */
+.star {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.star .material-icons {
+  font-size: 0.8rem;
+  color: chocolate;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Video füllt die Karte komplett aus */
+.card[style*="--index: 7"] video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
