@@ -353,3 +353,17 @@ footer {
 .bottom-gradient {
   /* Falls du diesen Verlauf nutzen willst, kannst du ihn anpassen */
 }
+
+/* Handy Overlay über Video Container */
+.handy-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%; /* 80% der Container-Höhe */
+  width: auto;
+  object-fit: contain;
+  z-index: 10; /* Über dem Video */
+  border-radius: 10px;
+  pointer-events: none; /* Damit der Button dahinter klickbar bleibt */
+}
