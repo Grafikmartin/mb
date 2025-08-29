@@ -28,12 +28,23 @@
     </header>s
     <div class="wetter-header">
         <h2 class="wetter-h2">Quizzly Bears</h2>
-            <p class="beschreibung">
-                <strong>Quizzly Bears</strong> ist mein Abschlussprojekt an der DCI mit vier weiteren Studenten: eine interaktive Quiz-App. Sie verbindet KI-generierte Inhalte mit spielerischen Elementen. Nutzer können sich selbst zu jedem Thema herausfordern oder aus vordefinierten Kategorien wählen. Ein Gamification-System mit Punkten, Medaillen und Ranglisten motiviert zusätzlich. Technisch basiert die mobile App auf React Native und TypeScript, das Backend auf Node.js und MongoDB. Die App bietet zudem detaillierte Statistiken und ein modernes, benutzerfreundliches Design.
-                </p>
+        <p class="beschreibung">
+            <strong>Quizzly Bears</strong> ist mein umfassendes Abschlussprojekt an der DCI, das ich im
+            <strong>5-köpfigen Team</strong> entwickelt habe: eine <strong>interaktive Quiz-App</strong> der nächsten
+            Generation.<br>
+            Die App vereint <strong>KI-generierte Inhalte</strong> mit spielerischen Gamification-Elementen. Nutzer
+            können sich in selbstgewählten Themengebieten herausfordern oder aus einer Vielzahl vordefinierter
+            Kategorien wählen.<br><br>
+
+            <strong>Technische Umsetzung:</strong><br>
+            - <strong>Frontend:</strong> Mobile App mit React Native & TypeScript<br>
+            - <strong>Backend:</strong> Node.js mit MongoDB<br>
+            - <strong>Features:</strong> Gamification-System (Punkte, Medaillen, Ranglisten), detaillierte Statistiken,
+            modernes UI/UX-Design
+        </p>
         <div class="video-container">
-                 <video src="./videos/QB-hintergrund.mp4" autoplay loop muted></video>
-                 <img src="./assets/handy-roh.webp" alt="Quizzly Bears Mobile App" class="handy-overlay" />
+            <video src="./videos/QB-hintergrund.mp4" autoplay loop muted></video>
+            <img src="./assets/handy-roh.webp" alt="Quizzly Bears Mobile App" class="handy-overlay" />
             <button id="livedemo">Zur Webseite</button>
         </div>
 
@@ -42,7 +53,8 @@
         <h3 class="text1">Technologien & Framworks</h3>
         <div class="Technologie">
             <div class="box" id="Logo1"><span><img src="./assets/ReactNative.png" alt="React Native"></span></div>
-            <div class="box" id="Logo2"><span><img src="./assets/techniken/typerscript.png" alt="TypeScript"></span></div>
+            <div class="box" id="Logo2"><span><img src="./assets/techniken/typerscript.png" alt="TypeScript"></span>
+            </div>
             <div class="box" id="Logo3"><span><img src="./assets/expo.png" alt="Expo"></span></div>
             <div class="box" id="Logo4"><span><img src="./assets/MongoDB.png" alt="MongoDB"></span></div>
             <div class="box" id="Logo5"><span><img src="./assets/Clerk.png" alt="Clerk"></span></div>
@@ -70,15 +82,15 @@
                 });
             });
             document.addEventListener('DOMContentLoaded', function () {
-                                    // Beschreibungstexte für jedes Logo mit fett formatierten Überschriften
-                    const descriptions = {
-                        'Logo1': '<strong>React Native</strong><br>Ein Framework für die Entwicklung mobiler Apps mit React. React Native ermöglicht es, native Mobile Apps für iOS und Android mit JavaScript und React zu erstellen. Die App nutzt echte native Komponenten und bietet eine performante und plattformspezifische Benutzererfahrung.',
-                        'Logo2': '<strong>TypeScript</strong><br>Eine von Microsoft entwickelte Programmiersprache, die JavaScript um statische Typisierung erweitert. TypeScript verbessert die Entwicklerproduktivität durch bessere IDE-Unterstützung, Fehlerprävention zur Compile-Zeit und erleichtert die Wartung großer Codebasen.',
-                        'Logo3': '<strong>Expo</strong><br>Eine Plattform und ein Framework für die Entwicklung von React Native Apps. Expo vereinfacht die Mobile-App-Entwicklung durch vorgefertigte APIs, Tools und Services. Es ermöglicht schnelles Prototyping und Deployment ohne native Entwicklungsumgebung.',
-                        'Logo4': '<strong>MongoDB</strong><br>Eine NoSQL-Dokumentendatenbank, die Daten in flexiblen, JSON-ähnlichen Dokumenten speichert. MongoDB bietet hohe Performance, einfache Skalierbarkeit und ist ideal für moderne Anwendungen mit komplexen Datenstrukturen wie Quiz-Apps.',
-                        'Logo5': '<strong>Clerk</strong><br>Eine moderne Authentifizierungsplattform, die komplette Benutzerverwaltung als Service bietet. Clerk vereinfacht die Implementierung von Login, Registrierung, Passwort-Reset und Benutzerprofilen mit vorgefertigten UI-Komponenten.',
-                        'Logo6': '<strong>Node.js</strong><br>Eine JavaScript-Laufzeitumgebung für Server-seitige Entwicklung. Node.js ermöglicht es, JavaScript außerhalb des Browsers zu verwenden und eignet sich perfekt für den Aufbau schneller, skalierbarer Netzwerkanwendungen und APIs.',
-                        'Logo7': '<strong>Figma</strong><br>Ein browserbasiertes Design-Tool für UI/UX-Design und Prototyping. Figma ermöglicht kollaboratives Design in Echtzeit und wurde für die Konzeption, das Design und die Prototypenerstellung der Quizzly Bears App verwendet.',
+                // Beschreibungstexte für jedes Logo mit fett formatierten Überschriften
+                const descriptions = {
+                    'Logo1': '<strong>React Native</strong><br>Ein Framework für die Entwicklung mobiler Apps mit React. React Native ermöglicht es, native Mobile Apps für iOS und Android mit JavaScript und React zu erstellen. Die App nutzt echte native Komponenten und bietet eine performante und plattformspezifische Benutzererfahrung.',
+                    'Logo2': '<strong>TypeScript</strong><br>Eine von Microsoft entwickelte Programmiersprache, die JavaScript um statische Typisierung erweitert. TypeScript verbessert die Entwicklerproduktivität durch bessere IDE-Unterstützung, Fehlerprävention zur Compile-Zeit und erleichtert die Wartung großer Codebasen.',
+                    'Logo3': '<strong>Expo</strong><br>Eine Plattform und ein Framework für die Entwicklung von React Native Apps. Expo vereinfacht die Mobile-App-Entwicklung durch vorgefertigte APIs, Tools und Services. Es ermöglicht schnelles Prototyping und Deployment ohne native Entwicklungsumgebung.',
+                    'Logo4': '<strong>MongoDB</strong><br>Eine NoSQL-Dokumentendatenbank, die Daten in flexiblen, JSON-ähnlichen Dokumenten speichert. MongoDB bietet hohe Performance, einfache Skalierbarkeit und ist ideal für moderne Anwendungen mit komplexen Datenstrukturen wie Quiz-Apps.',
+                    'Logo5': '<strong>Clerk</strong><br>Eine moderne Authentifizierungsplattform, die komplette Benutzerverwaltung als Service bietet. Clerk vereinfacht die Implementierung von Login, Registrierung, Passwort-Reset und Benutzerprofilen mit vorgefertigten UI-Komponenten.',
+                    'Logo6': '<strong>Node.js</strong><br>Eine JavaScript-Laufzeitumgebung für Server-seitige Entwicklung. Node.js ermöglicht es, JavaScript außerhalb des Browsers zu verwenden und eignet sich perfekt für den Aufbau schneller, skalierbarer Netzwerkanwendungen und APIs.',
+                    'Logo7': '<strong>Figma</strong><br>Ein browserbasiertes Design-Tool für UI/UX-Design und Prototyping. Figma ermöglicht kollaboratives Design in Echtzeit und wurde für die Konzeption, das Design und die Prototypenerstellung der Quizzly Bears App verwendet.',
 
 
                 };
@@ -134,7 +146,7 @@
 
                 // Nach einer kurzen Verzögerung zur Website weiterleiten
                 setTimeout(function () {
-                        window.open('https://grafikmartin.github.io/quizzlybears/', '_blank');
+                    window.open('https://grafikmartin.github.io/quizzlybears/', '_blank');
                 }, 800); // 800ms Verzögerung, damit der Nutzer die Animation sieht
             });
 
@@ -165,18 +177,18 @@
         <!-- Farbverlauf am unteren Rand (außerhalb des Timeline-Containers) -->
         <div class="bottom-gradient"></div>
 
-    <div class="button-container">
-      <ul class="social-icons">
-        <li style="--clr:#ffffff;">
-          <a href="https://github.com/nimitaya/quizzly-bears" target="_blank">
-            <span><i class="fa-brands fa-github"></i></span>
-            <span><i class="fa-brands fa-github"></i></span>
-            <span><i class="fa-brands fa-github"></i></span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="email-tooltip">GitHub</div>
+        <div class="button-container">
+            <ul class="social-icons">
+                <li style="--clr:#ffffff;">
+                    <a href="https://github.com/nimitaya/quizzly-bears" target="_blank">
+                        <span><i class="fa-brands fa-github"></i></span>
+                        <span><i class="fa-brands fa-github"></i></span>
+                        <span><i class="fa-brands fa-github"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="email-tooltip">GitHub</div>
 
 </body>
 
