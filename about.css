@@ -193,7 +193,7 @@ body::-webkit-scrollbar {
   opacity: 0;
   /* Standard unsichtbar */
   z-index: 5;
-  top: 65px;
+  top: -35px;
   left: 49.5%;
   transform: translateX(-50%);
   animation-duration: 2.5s;
@@ -224,7 +224,7 @@ body::-webkit-scrollbar {
      ========================================================= */
 #skillsbtn {
   position: absolute;
-  bottom: -540px;
+  bottom: -580px;
   margin-bottom: 150px;
   right: auto;
   z-index: 2;
