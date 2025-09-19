@@ -563,6 +563,47 @@ body::-webkit-scrollbar {
 /* =========================================================
      7. SOCIAL ICONS
      ========================================================= */
+/* LinkedIn Button (links) */
+.linkedin-container {
+  position: fixed;
+  bottom: 128px;
+  left: 10vw;
+  z-index: 1000;
+  transform: scale(0.5);
+  transform-origin: bottom left;
+}
+
+.linkedin-tooltip {
+  position: fixed;
+  bottom: 180px;
+  /* Position über dem linkedin-container */
+  left: 9vw;
+  /* Gleiche horizontale Ausrichtung wie linkedin-container */
+
+  color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  white-space: nowrap;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  z-index: 1001;
+  opacity: 0;
+  transition: opacity 1.8s ease;
+  pointer-events: none;
+  /* Verhindert, dass der Tooltip Mausevents blockiert */
+}
+
+/* Tooltip anzeigen wenn über linkedin-container gehovert wird */
+.linkedin-container:hover+.linkedin-tooltip {
+  opacity: 1;
+}
+
+/* LinkedIn Logo beim Hover austauschen */
+.linkedin-container:hover img {
+  content: url('./assets/icons8-linkedin-250-black.png');
+}
+
+/* E-Mail Button (rechts) */
 .button-container {
   position: fixed;
   bottom: 128px;
