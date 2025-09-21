@@ -570,12 +570,69 @@ footer .portfolio-info {
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
-/* Video füllt die Karte komplett aus */
-.card[style*="--index: 7"] video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+/* Portfolio Cards - CSS Custom Properties */
+.inner {
+  --quantity: 10;
+}
+
+.card {
+  --index: 0;
+  --color-card: 142, 249, 252;
+  cursor: pointer;
+}
+
+.card:nth-child(1) {
+  --index: 0;
+  --color-card: 142, 249, 252;
+}
+
+.card:nth-child(2) {
+  --index: 1;
+}
+
+.card:nth-child(3) {
+  --index: 2;
+}
+
+.card:nth-child(4) {
+  --index: 3;
+}
+
+.card:nth-child(5) {
+  --index: 4;
+}
+
+.card:nth-child(6) {
+  --index: 5;
+}
+
+.card:nth-child(7) {
+  --index: 6;
+}
+
+.card:nth-child(8) {
+  --index: 7;
+  --color-card: 204, 142, 252;
+}
+
+.card:nth-child(9) {
+  --index: 8;
+  --color-card: 142, 252, 157;
+}
+
+.card:nth-child(10) {
+  --index: 9;
+  --color-card: 204, 142, 252;
+}
+
+/* Content div - versteckt standardmäßig */
+#content {
+  display: none;
+}
+
+/* Social Icons - CSS Custom Properties */
+.social-icons li {
+  --clr: #ffffff;
 }
 
 

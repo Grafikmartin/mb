@@ -618,6 +618,8 @@ body::-webkit-scrollbar {
 /* LinkedIn Logo Transparenz anpassen */
 .linkedin-container img {
   opacity: 0.62;
+  width: 40px;
+  height: 40px;
   /* Gleiche Transparenz wie das E-Mail-Icon (#9e9e9e entspricht etwa 62% Opacity) */
 }
 
@@ -1411,7 +1413,195 @@ footer {
     bottom: 58px; /* 93px - 35px */
   }
 
-  .email-tooltip {
-    bottom: 110px; /* 145px - 35px */
-  }
+/* Silhouette Image */
+.silhouette-container img {
+  width: 22%;
+  height: auto;
+}
+
+/* Creative Icons - Animationen */
+.creative-icon:nth-child(2) {
+  animation: bubble-up-right 3s ease-out 0.2s infinite;
+}
+
+.creative-icon:nth-child(3) {
+  animation: bubble-up-left 2.8s ease-out 0.5s infinite;
+}
+
+.creative-icon:nth-child(4) {
+  animation: bubble-up-center 3.2s ease-out 0.8s infinite;
+}
+
+.creative-icon:nth-child(5) {
+  animation: bubble-up-right 3.5s ease-out 1.1s infinite;
+}
+
+.creative-icon:nth-child(6) {
+  animation: bubble-up-left 2.9s ease-out 1.4s infinite;
+}
+
+.creative-icon:nth-child(7) {
+  animation: bubble-up-center 3.3s ease-out 1.7s infinite;
+}
+
+.creative-icon:nth-child(8) {
+  animation: bubble-up-right 3.1s ease-out 2.0s infinite;
+}
+
+.creative-icon:nth-child(9) {
+  animation: bubble-up-left 3.4s ease-out 2.3s infinite;
+}
+
+.creative-icon:nth-child(10) {
+  animation: bubble-up-right 2s ease-out 0.1s infinite;
+  font-size: 20px;
+}
+
+.creative-icon:nth-child(11) {
+  animation: bubble-up-left 1.8s ease-out 0.3s infinite;
+  font-size: 18px;
+}
+
+.creative-icon:nth-child(12) {
+  animation: bubble-up-center 2.2s ease-out 0.5s infinite;
+  font-size: 22px;
+}
+
+.creative-icon:nth-child(13) {
+  animation: bubble-up-far-right 1.9s ease-out 0.7s infinite;
+  font-size: 19px;
+}
+
+.creative-icon:nth-child(14) {
+  animation: bubble-up-far-left 2.1s ease-out 0.9s infinite;
+  font-size: 21px;
+}
+
+.creative-icon:nth-child(15) {
+  animation: bubble-diagonal-right 1.7s ease-out 1.1s infinite;
+  font-size: 17px;
+}
+
+.creative-icon:nth-child(16) {
+  animation: bubble-diagonal-left 2.3s ease-out 1.3s infinite;
+  font-size: 23px;
+}
+
+.creative-icon:nth-child(17) {
+  animation: bubble-up-right 1.6s ease-out 1.5s infinite;
+  font-size: 16px;
+}
+
+.creative-icon:nth-child(18) {
+  animation: bubble-up-left 2.4s ease-out 1.7s infinite;
+  font-size: 24px;
+}
+
+.creative-icon:nth-child(19) {
+  animation: bubble-up-center 1.5s ease-out 1.9s infinite;
+  font-size: 15px;
+}
+
+.creative-icon:nth-child(20) {
+  animation: bubble-up-far-right 2.5s ease-out 2.1s infinite;
+  font-size: 25px;
+}
+
+.creative-icon:nth-child(21) {
+  animation: bubble-up-far-left 1.4s ease-out 2.3s infinite;
+  font-size: 14px;
+}
+
+.creative-icon:nth-child(22) {
+  animation: bubble-diagonal-right 2.6s ease-out 2.5s infinite;
+  font-size: 26px;
+}
+
+.creative-icon:nth-child(23) {
+  animation: bubble-diagonal-left 1.3s ease-out 2.7s infinite;
+  font-size: 13px;
+}
+
+.creative-icon:nth-child(24) {
+  animation: bubble-up-right 2.7s ease-out 2.9s infinite;
+  font-size: 27px;
+}
+
+.creative-icon:nth-child(25) {
+  animation: bubble-up-left 1.2s ease-out 3.1s infinite;
+  font-size: 12px;
+}
+
+.creative-icon:nth-child(26) {
+  animation: bubble-up-center 2.8s ease-out 3.3s infinite;
+  font-size: 28px;
+}
+
+.creative-icon:nth-child(27) {
+  animation: bubble-up-far-right 1.1s ease-out 3.5s infinite;
+  font-size: 11px;
+}
+
+.creative-icon:nth-child(28) {
+  animation: bubble-up-far-left 2.9s ease-out 3.7s infinite;
+  font-size: 29px;
+}
+
+.creative-icon:nth-child(29) {
+  animation: bubble-diagonal-right 1s ease-out 3.9s infinite;
+  font-size: 10px;
+}
+
+.creative-icon:nth-child(30) {
+  animation: bubble-up-right 1.8s ease-out 0.2s infinite;
+  font-size: 22px;
+}
+
+.creative-icon:nth-child(31) {
+  animation: bubble-up-left 2.1s ease-out 0.4s infinite;
+  font-size: 19px;
+}
+
+.creative-icon:nth-child(32) {
+  animation: bubble-up-center 1.7s ease-out 0.6s infinite;
+  font-size: 21px;
+}
+
+.creative-icon:nth-child(33) {
+  animation: bubble-up-far-right 2.2s ease-out 0.8s infinite;
+  font-size: 18px;
+}
+
+.creative-icon:nth-child(34) {
+  animation: bubble-up-far-left 1.9s ease-out 1.0s infinite;
+  font-size: 23px;
+}
+
+.creative-icon:nth-child(35) {
+  animation: bubble-diagonal-right 2.3s ease-out 1.2s infinite;
+  font-size: 20px;
+}
+
+.creative-icon:nth-child(36) {
+  animation: bubble-diagonal-left 1.6s ease-out 1.4s infinite;
+  font-size: 17px;
+}
+
+.creative-icon:nth-child(37) {
+  animation: bubble-up-right 2.4s ease-out 1.6s infinite;
+  font-size: 24px;
+}
+
+.creative-icon:nth-child(38) {
+  animation: bubble-up-left 1.5s ease-out 1.8s infinite;
+  font-size: 16px;
+}
+
+/* Social Icons - CSS Custom Properties */
+.social-icons li {
+  --clr: #ffffff;
+}
+
+/* LinkedIn Images - Größe */
+  /* Schwarzes Logo voll sichtbar */
 }

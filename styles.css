@@ -310,17 +310,6 @@ footer {
 }
 
 /* LinkedIn Logo Transparenz anpassen */
-.linkedin-container img {
-  opacity: 0.62;
-  /* Gleiche Transparenz wie das E-Mail-Icon (#9e9e9e entspricht etwa 62% Opacity) */
-}
-
-/* LinkedIn Logo beim Hover austauschen - schwarzes Logo ohne Transparenz */
-.linkedin-container:hover img {
-  content: url('./assets/icons8-linkedin-250-black.png');
-  opacity: 1;
-  /* Schwarzes Logo voll sichtbar */
-}
 
 /* E-Mail Button (rechts) */
 .button-container {
@@ -396,18 +385,6 @@ footer {
   opacity: 1;
 }
 
-/* LinkedIn Logo Transparenz anpassen */
-.linkedin-container img {
-  opacity: 0.62;
-  /* Gleiche Transparenz wie das E-Mail-Icon (#9e9e9e entspricht etwa 62% Opacity) */
-}
-
-/* LinkedIn Logo beim Hover austauschen - schwarzes Logo ohne Transparenz */
-.linkedin-container:hover img {
-  content: url('./assets/icons8-linkedin-250-black.png');
-  opacity: 1;
-  /* Schwarzes Logo voll sichtbar */
-}
 
 /* E-Mail Button (rechts) */
 .button-container {
@@ -552,23 +529,19 @@ ul li:hover i {
   color: #000000;
 }
 
-/* Mobile-spezifische Anpassungen für Social Buttons */
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  /* Social Buttons für Mobile tiefer positionieren */
-  .linkedin-container {
-    bottom: 58px; /* Gleiche Höhe wie andere Mobile Buttons */
-  }
+/* Content div - versteckt standardmäßig */
+#content {
+  display: none;
+}
 
-  .linkedin-tooltip {
-    bottom: 110px; /* Entsprechend angepasst */
-  }
+/* Social Icons - CSS Custom Properties */
+.social-icons li {
+  --clr: #ffffff;
+}
 
-  .button-container {
-    bottom: 58px; /* Gleiche Höhe wie andere Mobile Buttons */
-  }
-
-  .email-tooltip {
-    bottom: 110px; /* Entsprechend angepasst */
-  }
+/* LinkedIn Images - Größe */
+.linkedin-container img {
+  width: 40px;
+  height: 40px;
 }
 
