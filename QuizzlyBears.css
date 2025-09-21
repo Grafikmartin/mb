@@ -163,9 +163,7 @@ nav {
   object-fit: contain;
   display: block;
   border: none;
-  opacity: 0;
-  animation: videoFadeIn 1s forwards;
-  animation-delay: 1.5s;
+  opacity: 1;
   transform: scale(1.1);
   transform-origin: center center;
 }
