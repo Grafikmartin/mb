@@ -584,7 +584,7 @@ body::-webkit-scrollbar {
 .linkedin-container {
   position: fixed;
   bottom: 128px;
-  left: 10vw;
+  left: 7vw;
   z-index: 1000;
   transform: scale(0.5);
   transform-origin: bottom left;
@@ -594,7 +594,7 @@ body::-webkit-scrollbar {
   position: fixed;
   bottom: 180px;
   /* Position über dem linkedin-container */
-  left: 9vw;
+  left: 6vw;
   /* Gleiche horizontale Ausrichtung wie linkedin-container */
 
   color: rgba(255, 255, 255, 0.2);
@@ -660,7 +660,7 @@ body::-webkit-scrollbar {
 .button-container {
   position: fixed;
   bottom: 128px;
-  right: 10vw;
+  right: 7vw;
   z-index: 1000;
   transform: scale(0.5);
   transform-origin: bottom right;
@@ -670,7 +670,7 @@ body::-webkit-scrollbar {
   position: fixed;
   bottom: 180px;
   /* Position über dem button-container */
-  right: 9vw;
+  right: 6vw;
   /* Gleiche horizontale Ausrichtung wie button-container */
 
   color: rgba(255, 255, 255, 0.2);
