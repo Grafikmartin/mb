@@ -1309,7 +1309,7 @@ footer {
   }
 
   .card-2 {
-    top: 80%;
+    top: 78%;
   }
 
   .card-3 {
@@ -1400,18 +1400,18 @@ footer {
 
   /* Social Buttons für Mobile tiefer positionieren */
   .linkedin-container {
-    bottom: 93px; /* 128px - 35px */
+    bottom: 58px; /* 93px - 35px */
   }
 
   .linkedin-tooltip {
-    bottom: 145px; /* 180px - 35px */
+    bottom: 110px; /* 145px - 35px */
   }
 
   .button-container {
-    bottom: 93px; /* 128px - 35px */
+    bottom: 58px; /* 93px - 35px */
   }
 
   .email-tooltip {
-    bottom: 145px; /* 180px - 35px */
+    bottom: 110px; /* 145px - 35px */
   }
 }
