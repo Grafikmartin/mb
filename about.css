@@ -603,6 +603,11 @@ body::-webkit-scrollbar {
   content: url('./assets/icons8-linkedin-250-black.png');
 }
 
+/* LinkedIn Logo Transparenz anpassen */
+.linkedin-container img {
+  opacity: 0.62; /* Gleiche Transparenz wie das E-Mail-Icon (#9e9e9e entspricht etwa 62% Opacity) */
+}
+
 /* E-Mail Button (rechts) */
 .button-container {
   position: fixed;
