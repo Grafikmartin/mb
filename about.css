@@ -1305,39 +1305,39 @@ footer {
 
   /* Card-Positionen neu definieren für Mobilgeräte */
   .card-1 {
-    top: 94.2%;
+    top: 90%;
   }
 
   .card-2 {
-    top: 85%;
+    top: 80%;
   }
 
   .card-3 {
-    top: 73.5%;
+    top: 70%;
   }
 
   .card-4 {
-    top: 68%;
+    top: 60%;
   }
 
   .card-5 {
-    top: 60.75%;
+    top: 50%;
   }
 
   .card-6 {
-    top: 45%;
+    top: 40%;
   }
 
   .card-7 {
-    top: 38%;
+    top: 30%;
   }
 
   .card-8 {
-    top: 17.75%;
+    top: 20%;
   }
 
   .card-9 {
-    top: 7.25%;
+    top: 10%;
   }
 
   .card-10 {
@@ -1396,5 +1396,22 @@ footer {
     font-size: 0.9rem;
     left: 53%;
     margin-left: 15px;
+  }
+
+  /* Social Buttons für Mobile tiefer positionieren */
+  .linkedin-container {
+    bottom: 93px; /* 128px - 35px */
+  }
+
+  .linkedin-tooltip {
+    bottom: 145px; /* 180px - 35px */
+  }
+
+  .button-container {
+    bottom: 93px; /* 128px - 35px */
+  }
+
+  .email-tooltip {
+    bottom: 145px; /* 180px - 35px */
   }
 }
