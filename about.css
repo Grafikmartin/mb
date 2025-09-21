@@ -254,8 +254,8 @@ body::-webkit-scrollbar {
   font-size: 2rem;
   margin-bottom: 0px;
   /* Abstand zur Timeline */
-  margin-top: 460px;
-  /* Abstand zum Button darüber */
+  margin-top: 60px;
+  /* Gleicher Abstand wie ursprünglich die Skills hatten */
   font-weight: bold;
   position: relative;
   z-index: 10;
@@ -282,7 +282,8 @@ body::-webkit-scrollbar {
   width: 1px;
   background-color: chocolate;
   margin: 0 auto;
-  height: 4900px;
+  height: 2800px;
+  /* Desktop height - 20% shorter */
   margin-top: 100px;
   z-index: 1;
 }
@@ -368,45 +369,55 @@ body::-webkit-scrollbar {
   text-align: left !important;
 }
 
-/* Einzelne Positionen (Top-Werte) */
+/* Einzelne Positionen (Top-Werte) mit z-index */
 .card-1 {
-  top: 0%;
+  top: 90%;
+  z-index: 101;
 }
 
 .card-2 {
-  top: 7%;
+  top: 78%;
+  z-index: 102;
 }
 
 .card-3 {
-  top: 17.5%;
+  top: 70%;
+  z-index: 103;
 }
 
 .card-4 {
-  top: 36%;
+  top: 59%;
+  z-index: 104;
 }
 
 .card-5 {
-  top: 43.7%;
+  top: 49%;
+  z-index: 105;
 }
 
 .card-6 {
-  top: 58.5%;
+  top: 38%;
+  z-index: 106;
 }
 
 .card-7 {
-  top: 66.75%;
+  top: 27%;
+  z-index: 107;
 }
 
 .card-8 {
-  top: 73.5%;
+  top: 17%;
+  z-index: 108;
 }
 
 .card-9 {
-  top: 84.2%;
+  top: 8%;
+  z-index: 109;
 }
 
 .card-10 {
-  top: 93.6%;
+  top: 0%;
+  z-index: 110;
 }
 
 .timeline-card h2 {
@@ -461,6 +472,12 @@ body::-webkit-scrollbar {
   padding-bottom: 20px;
   line-height: 1.6;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Erste Skills-Text bekommt den gleichen Abstand wie HeadlineTimeline hatte */
+.skills-text:first-of-type {
+  margin-top: 520px;
+  /* Etwas tiefer als ursprünglich 460px */
 }
 
 .skills {
@@ -598,14 +615,43 @@ body::-webkit-scrollbar {
   opacity: 1;
 }
 
-/* LinkedIn Logo beim Hover austauschen */
-.linkedin-container:hover img {
-  content: url('./assets/icons8-linkedin-250-black.png');
-}
-
 /* LinkedIn Logo Transparenz anpassen */
 .linkedin-container img {
-  opacity: 0.62; /* Gleiche Transparenz wie das E-Mail-Icon (#9e9e9e entspricht etwa 62% Opacity) */
+  opacity: 0.62;
+  /* Gleiche Transparenz wie das E-Mail-Icon (#9e9e9e entspricht etwa 62% Opacity) */
+}
+
+/* LinkedIn Logo beim Hover austauschen - schwarzes Logo ohne Transparenz */
+.linkedin-container:hover img {
+  content: url('./assets/icons8-linkedin-250-black.png');
+  opacity: 1;
+  /* Schwarzes Logo voll sichtbar */
+}
+
+/* Timeline Toggle Buttons - Design wie Timeline anzeigen Button, aber kleiner */
+.timeline-toggle-btn {
+  background: rgb(5, 5, 5);
+  color: #fff;
+  border: 0.1vh ridge rgb(255, 255, 255);
+  padding: 6px 12px;
+  font-size: 0.6em;
+  border-radius: 35px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 1s ease-in-out, color 1s ease-in-out;
+  outline: none;
+  overflow: hidden;
+}
+
+.timeline-toggle-btn:hover {
+  background: chocolate;
+}
+
+.timeline-text-short,
+.timeline-text-full {
+  transition: all 0.3s ease;
 }
 
 /* E-Mail Button (rechts) */
@@ -1209,7 +1255,8 @@ footer {
   }
 
   .timeline {
-    height: 5500px;
+    height: 3200px;
+    /* Mobile small - 20% shorter */
     /* Passende Höhe für kleine Mobilgeräte */
     margin-top: 30px;
   }
@@ -1258,48 +1305,49 @@ footer {
 
   /* Card-Positionen neu definieren für Mobilgeräte */
   .card-1 {
-    top: 0.5%;
+    top: 94.2%;
   }
 
   .card-2 {
-    top: 7.25%;
-  }
-
-  .card-3 {
-    top: 17.75%;
-  }
-
-  .card-4 {
-    top: 38%;
-  }
-
-  .card-5 {
-    top: 45%;
-  }
-
-  .card-6 {
-    top: 60.75%;
-  }
-
-  .card-7 {
-    top: 68%;
-  }
-
-  .card-8 {
-    top: 73.5%;
-  }
-
-  .card-9 {
     top: 85%;
   }
 
+  .card-3 {
+    top: 73.5%;
+  }
+
+  .card-4 {
+    top: 68%;
+  }
+
+  .card-5 {
+    top: 60.75%;
+  }
+
+  .card-6 {
+    top: 45%;
+  }
+
+  .card-7 {
+    top: 38%;
+  }
+
+  .card-8 {
+    top: 17.75%;
+  }
+
+  .card-9 {
+    top: 7.25%;
+  }
+
   .card-10 {
-    top: 94.2%;
+    top: 0.5%;
   }
 
   /* Geänderte Timeline-Höhe für bessere Verteilung */
   .timeline {
-    height: 4900px;
+    height: 2800px;
+    /* Mobile large - 20% shorter */
     margin-top: 40px;
   }
 
@@ -1308,6 +1356,12 @@ footer {
     margin-top: 90px;
     margin-bottom: 30px;
     font-size: 1.8rem;
+  }
+
+  /* Skills-Positionierung für Mobile */
+  .skills-text:first-of-type {
+    margin-top: 120px;
+    /* Angepasst für Mobile */
   }
 
   /* About-Header mit besserer Struktur */
