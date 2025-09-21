@@ -546,10 +546,12 @@ footer .portfolio-info {
   /* GitHub Button für Mobile tiefer positionieren */
   .button-container {
     bottom: 58px; /* Gleiche Höhe wie LinkedIn/Email Buttons */
+    right: calc(10vw - 15px); /* 15px weiter nach rechts */
   }
 
   .email-tooltip {
     bottom: 110px; /* Entsprechend angepasst */
+    right: calc(9vw - 15px); /* 15px weiter nach rechts */
   }
 }
 
