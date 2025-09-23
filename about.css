@@ -484,9 +484,9 @@ body::-webkit-scrollbar {
      4. BUTTON (z. B. Skills anzeigen)
      ========================================================= */
 #skillsbtn {
-  position: absolute;
-  bottom: -580px;
-  margin-bottom: 150px;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 20px;
   right: auto;
   z-index: 10;
   padding: 10px 20px;
@@ -509,9 +509,9 @@ body::-webkit-scrollbar {
 }
 
 .cv-download-button {
-  position: absolute;
-  bottom: -650px;
-  margin-bottom: 220px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 80px;
   right: auto;
   z-index: 10;
   padding: 10px 20px;
