@@ -481,15 +481,20 @@ body::-webkit-scrollbar {
 }
 
 /* =========================================================
-     4. BUTTON (z. B. Skills anzeigen)
+     4. BUTTON CONTAINER & BUTTONS
      ========================================================= */
-#skillsbtn {
+.button-container-timeline {
   position: absolute;
-  bottom: -400px;
-  margin-bottom: 150px;
+  bottom: -700px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+#skillsbtn {
   padding: 10px 20px;
   font-size: 0.8em;
   color: #fff;
@@ -510,12 +515,6 @@ body::-webkit-scrollbar {
 }
 
 .cv-download-button {
-  position: absolute;
-  bottom: -480px;
-  margin-bottom: 220px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
   padding: 10px 20px;
   font-size: 0.8em;
   color: #fff;
