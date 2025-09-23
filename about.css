@@ -485,7 +485,7 @@ body::-webkit-scrollbar {
      ========================================================= */
 .button-container-timeline {
   position: absolute;
-  bottom: -700px;
+  bottom: -450px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
@@ -493,6 +493,10 @@ body::-webkit-scrollbar {
   flex-direction: column;
   gap: 20px;
   align-items: center;
+}
+
+.button-container-timeline > * {
+  width: 200px;
 }
 #skillsbtn {
   padding: 10px 20px;
@@ -508,6 +512,7 @@ body::-webkit-scrollbar {
   overflow: hidden;
   border: 0.2vh ridge rgb(255, 255, 255);
   transition: background-color 1s ease-in-out, color 1s ease-in-out;
+  text-align: center;
 }
 
 #skillsbtn:hover {
@@ -530,7 +535,7 @@ body::-webkit-scrollbar {
   transition: background-color 1s ease-in-out, color 1s ease-in-out;
   text-decoration: none;
   display: inline-block;
-  margin-top: 20px;
+  text-align: center;
 }
 
 .cv-download-button:hover {
