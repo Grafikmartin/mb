@@ -193,7 +193,7 @@ body::-webkit-scrollbar {
   opacity: 0;
   /* Standard unsichtbar */
   z-index: 5;
-  top: -35px;
+  top: 15px;
   left: 49.5%;
   transform: translateX(-50%);
   animation-duration: 3s;
