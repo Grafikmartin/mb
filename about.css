@@ -1669,27 +1669,38 @@ footer {
     padding-bottom: 100px;
   }
 
-  /* Button-Position optimieren */
-  #skillsbtn {
+  /* Button-Container für Mobile anpassen */
+  .button-container-timeline {
     position: relative;
     bottom: auto;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    font-size: 0.9em;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .button-container-timeline > * {
+    width: 180px;
+    font-size: 0.75em;
+  }
+
+  #skillsbtn {
+    font-size: 0.75em;
   }
 
   .cv-download-button {
-    position: relative;
-    bottom: auto;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    font-size: 0.9em;
+    font-size: 0.75em;
   }
 
-  /* Creative Icons reduziert anzeigen */
+  /* Creative Icons reduziert anzeigen - KEIN Hover-Effekt auf Mobile */
   .creative-icon {
-    opacity: 0.7;
+    opacity: 0 !important;
     font-size: 14px;
+    animation: none !important;
+    display: none !important;
+  }
+
+  .creative-hover-container:hover .creative-icon {
+    opacity: 0 !important;
+    animation: none !important;
   }
 
   /* Weniger Icons anzeigen durch CSS-Selektion */
