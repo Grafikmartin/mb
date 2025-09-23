@@ -204,290 +204,278 @@ body::-webkit-scrollbar {
 }
 
 /* Standard: Animation anhalten, Icons verschwinden */
-.about-header img:not(:hover)~.creative-icon,
-.about-header h2:not(:hover)~.creative-icon,
-.about-header .head2:not(:hover)~.creative-icon,
-.about-header .head3:not(:hover)~.creative-icon,
-.about-header .text1:not(:hover)~.creative-icon,
-.about-header .text2:not(:hover)~.creative-icon,
-.about-header .text3:not(:hover)~.creative-icon {
+.creative-hover-container:not(:hover) .creative-icon {
   animation: none !important;
   opacity: 0 !important;
 }
 
-/* Nur wenn das Bild oder die Überschriften gehovern, darf sich was bewegen */
-.about-header img:hover~.creative-icon,
-.about-header h2:hover~.creative-icon,
-.about-header .head2:hover~.creative-icon,
-.about-header .head3:hover~.creative-icon,
-.about-header .text1:hover~.creative-icon,
-.about-header .text2:hover~.creative-icon,
-.about-header .text3:hover~.creative-icon {
+/* Nur wenn der Container gehovert wird, darf sich was bewegen */
+.creative-hover-container:hover .creative-icon {
   /* Individuelle Animationen werden durch nth-child Regeln definiert */
 }
 
 /* Individuelle Animationen für verschiedene Richtungen (Springbrunnen-Effekt) */
-.about-header img:hover~.creative-icon:nth-child(2),
-.about-header h2:hover~.creative-icon:nth-child(2),
-.about-header .head2:hover~.creative-icon:nth-child(2),
-.about-header .head3:hover~.creative-icon:nth-child(2),
-.about-header .text1:hover~.creative-icon:nth-child(2),
-.about-header .text2:hover~.creative-icon:nth-child(2),
-.about-header .text3:hover~.creative-icon:nth-child(2) {
+.creative-hover-container:hover .creative-icon:nth-child(2),
+.creative-hover-container:hover .creative-icon:nth-child(2),
+.creative-hover-container:hover .creative-icon:nth-child(2),
+.creative-hover-container:hover .creative-icon:nth-child(2),
+.creative-hover-container:hover .creative-icon:nth-child(2),
+.creative-hover-container:hover .creative-icon:nth-child(2),
+.creative-hover-container:hover .creative-icon:nth-child(2) {
   animation-name: bubble-up-right;
   animation-delay: 0.2s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(3),
-.about-header h2:hover~.creative-icon:nth-child(3),
-.about-header .head2:hover~.creative-icon:nth-child(3),
-.about-header .head3:hover~.creative-icon:nth-child(3),
-.about-header .text1:hover~.creative-icon:nth-child(3),
-.about-header .text2:hover~.creative-icon:nth-child(3),
-.about-header .text3:hover~.creative-icon:nth-child(3) {
+.creative-hover-container:hover .creative-icon:nth-child(3),
+.creative-hover-container:hover .creative-icon:nth-child(3),
+.creative-hover-container:hover .creative-icon:nth-child(3),
+.creative-hover-container:hover .creative-icon:nth-child(3),
+.creative-hover-container:hover .creative-icon:nth-child(3),
+.creative-hover-container:hover .creative-icon:nth-child(3),
+.creative-hover-container:hover .creative-icon:nth-child(3) {
   animation-name: bubble-up-left;
   animation-delay: 0.7s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(4),
-.about-header h2:hover~.creative-icon:nth-child(4),
-.about-header .head2:hover~.creative-icon:nth-child(4),
-.about-header .head3:hover~.creative-icon:nth-child(4),
-.about-header .text1:hover~.creative-icon:nth-child(4),
-.about-header .text2:hover~.creative-icon:nth-child(4),
-.about-header .text3:hover~.creative-icon:nth-child(4) {
+.creative-hover-container:hover .creative-icon:nth-child(4),
+.creative-hover-container:hover .creative-icon:nth-child(4),
+.creative-hover-container:hover .creative-icon:nth-child(4),
+.creative-hover-container:hover .creative-icon:nth-child(4),
+.creative-hover-container:hover .creative-icon:nth-child(4),
+.creative-hover-container:hover .creative-icon:nth-child(4),
+.creative-hover-container:hover .creative-icon:nth-child(4) {
   animation-name: bubble-up-center;
   animation-delay: 1.1s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(5),
-.about-header h2:hover~.creative-icon:nth-child(5),
-.about-header .head2:hover~.creative-icon:nth-child(5),
-.about-header .head3:hover~.creative-icon:nth-child(5),
-.about-header .text1:hover~.creative-icon:nth-child(5),
-.about-header .text2:hover~.creative-icon:nth-child(5),
-.about-header .text3:hover~.creative-icon:nth-child(5) {
+.creative-hover-container:hover .creative-icon:nth-child(5),
+.creative-hover-container:hover .creative-icon:nth-child(5),
+.creative-hover-container:hover .creative-icon:nth-child(5),
+.creative-hover-container:hover .creative-icon:nth-child(5),
+.creative-hover-container:hover .creative-icon:nth-child(5),
+.creative-hover-container:hover .creative-icon:nth-child(5),
+.creative-hover-container:hover .creative-icon:nth-child(5) {
   animation-name: bubble-up-far-right;
   animation-delay: 1.8s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(6),
-.about-header h2:hover~.creative-icon:nth-child(6),
-.about-header .head2:hover~.creative-icon:nth-child(6),
-.about-header .head3:hover~.creative-icon:nth-child(6),
-.about-header .text1:hover~.creative-icon:nth-child(6),
-.about-header .text2:hover~.creative-icon:nth-child(6),
-.about-header .text3:hover~.creative-icon:nth-child(6) {
+.creative-hover-container:hover .creative-icon:nth-child(6),
+.creative-hover-container:hover .creative-icon:nth-child(6),
+.creative-hover-container:hover .creative-icon:nth-child(6),
+.creative-hover-container:hover .creative-icon:nth-child(6),
+.creative-hover-container:hover .creative-icon:nth-child(6),
+.creative-hover-container:hover .creative-icon:nth-child(6),
+.creative-hover-container:hover .creative-icon:nth-child(6) {
   animation-name: bubble-up-far-left;
   animation-delay: 2.3s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(7),
-.about-header h2:hover~.creative-icon:nth-child(7),
-.about-header .head2:hover~.creative-icon:nth-child(7),
-.about-header .head3:hover~.creative-icon:nth-child(7),
-.about-header .text1:hover~.creative-icon:nth-child(7),
-.about-header .text2:hover~.creative-icon:nth-child(7),
-.about-header .text3:hover~.creative-icon:nth-child(7) {
+.creative-hover-container:hover .creative-icon:nth-child(7),
+.creative-hover-container:hover .creative-icon:nth-child(7),
+.creative-hover-container:hover .creative-icon:nth-child(7),
+.creative-hover-container:hover .creative-icon:nth-child(7),
+.creative-hover-container:hover .creative-icon:nth-child(7),
+.creative-hover-container:hover .creative-icon:nth-child(7),
+.creative-hover-container:hover .creative-icon:nth-child(7) {
   animation-name: bubble-diagonal-right;
   animation-delay: 2.9s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(8),
-.about-header h2:hover~.creative-icon:nth-child(8),
-.about-header .head2:hover~.creative-icon:nth-child(8),
-.about-header .head3:hover~.creative-icon:nth-child(8),
-.about-header .text1:hover~.creative-icon:nth-child(8),
-.about-header .text2:hover~.creative-icon:nth-child(8),
-.about-header .text3:hover~.creative-icon:nth-child(8) {
+.creative-hover-container:hover .creative-icon:nth-child(8),
+.creative-hover-container:hover .creative-icon:nth-child(8),
+.creative-hover-container:hover .creative-icon:nth-child(8),
+.creative-hover-container:hover .creative-icon:nth-child(8),
+.creative-hover-container:hover .creative-icon:nth-child(8),
+.creative-hover-container:hover .creative-icon:nth-child(8),
+.creative-hover-container:hover .creative-icon:nth-child(8) {
   animation-name: bubble-diagonal-left;
   animation-delay: 3.4s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(9),
-.about-header h2:hover~.creative-icon:nth-child(9),
-.about-header .head2:hover~.creative-icon:nth-child(9),
-.about-header .head3:hover~.creative-icon:nth-child(9),
-.about-header .text1:hover~.creative-icon:nth-child(9),
-.about-header .text2:hover~.creative-icon:nth-child(9),
-.about-header .text3:hover~.creative-icon:nth-child(9) {
+.creative-hover-container:hover .creative-icon:nth-child(9),
+.creative-hover-container:hover .creative-icon:nth-child(9),
+.creative-hover-container:hover .creative-icon:nth-child(9),
+.creative-hover-container:hover .creative-icon:nth-child(9),
+.creative-hover-container:hover .creative-icon:nth-child(9),
+.creative-hover-container:hover .creative-icon:nth-child(9),
+.creative-hover-container:hover .creative-icon:nth-child(9) {
   animation-name: bubble-up-right;
   animation-delay: 4.1s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(10),
-.about-header h2:hover~.creative-icon:nth-child(10),
-.about-header .head2:hover~.creative-icon:nth-child(10),
-.about-header .head3:hover~.creative-icon:nth-child(10),
-.about-header .text1:hover~.creative-icon:nth-child(10),
-.about-header .text2:hover~.creative-icon:nth-child(10),
-.about-header .text3:hover~.creative-icon:nth-child(10) {
+.creative-hover-container:hover .creative-icon:nth-child(10),
+.creative-hover-container:hover .creative-icon:nth-child(10),
+.creative-hover-container:hover .creative-icon:nth-child(10),
+.creative-hover-container:hover .creative-icon:nth-child(10),
+.creative-hover-container:hover .creative-icon:nth-child(10),
+.creative-hover-container:hover .creative-icon:nth-child(10),
+.creative-hover-container:hover .creative-icon:nth-child(10) {
   animation-name: bubble-up-center;
   animation-delay: 0.5s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(11),
-.about-header h2:hover~.creative-icon:nth-child(11),
-.about-header .head2:hover~.creative-icon:nth-child(11),
-.about-header .head3:hover~.creative-icon:nth-child(11),
-.about-header .text1:hover~.creative-icon:nth-child(11),
-.about-header .text2:hover~.creative-icon:nth-child(11),
-.about-header .text3:hover~.creative-icon:nth-child(11) {
+.creative-hover-container:hover .creative-icon:nth-child(11),
+.creative-hover-container:hover .creative-icon:nth-child(11),
+.creative-hover-container:hover .creative-icon:nth-child(11),
+.creative-hover-container:hover .creative-icon:nth-child(11),
+.creative-hover-container:hover .creative-icon:nth-child(11),
+.creative-hover-container:hover .creative-icon:nth-child(11),
+.creative-hover-container:hover .creative-icon:nth-child(11) {
   animation-name: bubble-diagonal-left;
   animation-delay: 1.4s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(12),
-.about-header h2:hover~.creative-icon:nth-child(12),
-.about-header .head2:hover~.creative-icon:nth-child(12),
-.about-header .head3:hover~.creative-icon:nth-child(12),
-.about-header .text1:hover~.creative-icon:nth-child(12),
-.about-header .text2:hover~.creative-icon:nth-child(12),
-.about-header .text3:hover~.creative-icon:nth-child(12) {
+.creative-hover-container:hover .creative-icon:nth-child(12),
+.creative-hover-container:hover .creative-icon:nth-child(12),
+.creative-hover-container:hover .creative-icon:nth-child(12),
+.creative-hover-container:hover .creative-icon:nth-child(12),
+.creative-hover-container:hover .creative-icon:nth-child(12),
+.creative-hover-container:hover .creative-icon:nth-child(12),
+.creative-hover-container:hover .creative-icon:nth-child(12) {
   animation-name: bubble-up-far-right;
   animation-delay: 2.1s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(13),
-.about-header h2:hover~.creative-icon:nth-child(13),
-.about-header .head2:hover~.creative-icon:nth-child(13),
-.about-header .head3:hover~.creative-icon:nth-child(13),
-.about-header .text1:hover~.creative-icon:nth-child(13),
-.about-header .text2:hover~.creative-icon:nth-child(13),
-.about-header .text3:hover~.creative-icon:nth-child(13) {
+.creative-hover-container:hover .creative-icon:nth-child(13),
+.creative-hover-container:hover .creative-icon:nth-child(13),
+.creative-hover-container:hover .creative-icon:nth-child(13),
+.creative-hover-container:hover .creative-icon:nth-child(13),
+.creative-hover-container:hover .creative-icon:nth-child(13),
+.creative-hover-container:hover .creative-icon:nth-child(13),
+.creative-hover-container:hover .creative-icon:nth-child(13) {
   animation-name: bubble-diagonal-right;
   animation-delay: 2.7s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(14),
-.about-header h2:hover~.creative-icon:nth-child(14),
-.about-header .head2:hover~.creative-icon:nth-child(14),
-.about-header .head3:hover~.creative-icon:nth-child(14),
-.about-header .text1:hover~.creative-icon:nth-child(14),
-.about-header .text2:hover~.creative-icon:nth-child(14),
-.about-header .text3:hover~.creative-icon:nth-child(14) {
+.creative-hover-container:hover .creative-icon:nth-child(14),
+.creative-hover-container:hover .creative-icon:nth-child(14),
+.creative-hover-container:hover .creative-icon:nth-child(14),
+.creative-hover-container:hover .creative-icon:nth-child(14),
+.creative-hover-container:hover .creative-icon:nth-child(14),
+.creative-hover-container:hover .creative-icon:nth-child(14),
+.creative-hover-container:hover .creative-icon:nth-child(14) {
   animation-name: bubble-up-left;
   animation-delay: 3.6s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(15),
-.about-header h2:hover~.creative-icon:nth-child(15),
-.about-header .head2:hover~.creative-icon:nth-child(15),
-.about-header .head3:hover~.creative-icon:nth-child(15),
-.about-header .text1:hover~.creative-icon:nth-child(15),
-.about-header .text2:hover~.creative-icon:nth-child(15),
-.about-header .text3:hover~.creative-icon:nth-child(15) {
+.creative-hover-container:hover .creative-icon:nth-child(15),
+.creative-hover-container:hover .creative-icon:nth-child(15),
+.creative-hover-container:hover .creative-icon:nth-child(15),
+.creative-hover-container:hover .creative-icon:nth-child(15),
+.creative-hover-container:hover .creative-icon:nth-child(15),
+.creative-hover-container:hover .creative-icon:nth-child(15),
+.creative-hover-container:hover .creative-icon:nth-child(15) {
   animation-name: bubble-up-far-left;
   animation-delay: 4.5s;
 }
 
 /* Weitere Icons 16-38 für vollständigen Springbrunnen-Effekt */
-.about-header img:hover~.creative-icon:nth-child(16),
-.about-header h2:hover~.creative-icon:nth-child(16),
-.about-header .head2:hover~.creative-icon:nth-child(16),
-.about-header .head3:hover~.creative-icon:nth-child(16),
-.about-header .text1:hover~.creative-icon:nth-child(16),
-.about-header .text2:hover~.creative-icon:nth-child(16),
-.about-header .text3:hover~.creative-icon:nth-child(16) {
+.creative-hover-container:hover .creative-icon:nth-child(16),
+.creative-hover-container:hover .creative-icon:nth-child(16),
+.creative-hover-container:hover .creative-icon:nth-child(16),
+.creative-hover-container:hover .creative-icon:nth-child(16),
+.creative-hover-container:hover .creative-icon:nth-child(16),
+.creative-hover-container:hover .creative-icon:nth-child(16),
+.creative-hover-container:hover .creative-icon:nth-child(16) {
   animation-name: bubble-diagonal-right;
   animation-delay: 0.3s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(17),
-.about-header h2:hover~.creative-icon:nth-child(17),
-.about-header .head2:hover~.creative-icon:nth-child(17),
-.about-header .head3:hover~.creative-icon:nth-child(17),
-.about-header .text1:hover~.creative-icon:nth-child(17),
-.about-header .text2:hover~.creative-icon:nth-child(17),
-.about-header .text3:hover~.creative-icon:nth-child(17) {
+.creative-hover-container:hover .creative-icon:nth-child(17),
+.creative-hover-container:hover .creative-icon:nth-child(17),
+.creative-hover-container:hover .creative-icon:nth-child(17),
+.creative-hover-container:hover .creative-icon:nth-child(17),
+.creative-hover-container:hover .creative-icon:nth-child(17),
+.creative-hover-container:hover .creative-icon:nth-child(17),
+.creative-hover-container:hover .creative-icon:nth-child(17) {
   animation-name: bubble-up-center;
   animation-delay: 0.8s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(18),
-.about-header h2:hover~.creative-icon:nth-child(18),
-.about-header .head2:hover~.creative-icon:nth-child(18),
-.about-header .head3:hover~.creative-icon:nth-child(18),
-.about-header .text1:hover~.creative-icon:nth-child(18),
-.about-header .text2:hover~.creative-icon:nth-child(18),
-.about-header .text3:hover~.creative-icon:nth-child(18) {
+.creative-hover-container:hover .creative-icon:nth-child(18),
+.creative-hover-container:hover .creative-icon:nth-child(18),
+.creative-hover-container:hover .creative-icon:nth-child(18),
+.creative-hover-container:hover .creative-icon:nth-child(18),
+.creative-hover-container:hover .creative-icon:nth-child(18),
+.creative-hover-container:hover .creative-icon:nth-child(18),
+.creative-hover-container:hover .creative-icon:nth-child(18) {
   animation-name: bubble-up-left;
   animation-delay: 1.5s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(19),
-.about-header h2:hover~.creative-icon:nth-child(19),
-.about-header .head2:hover~.creative-icon:nth-child(19),
-.about-header .head3:hover~.creative-icon:nth-child(19),
-.about-header .text1:hover~.creative-icon:nth-child(19),
-.about-header .text2:hover~.creative-icon:nth-child(19),
-.about-header .text3:hover~.creative-icon:nth-child(19) {
+.creative-hover-container:hover .creative-icon:nth-child(19),
+.creative-hover-container:hover .creative-icon:nth-child(19),
+.creative-hover-container:hover .creative-icon:nth-child(19),
+.creative-hover-container:hover .creative-icon:nth-child(19),
+.creative-hover-container:hover .creative-icon:nth-child(19),
+.creative-hover-container:hover .creative-icon:nth-child(19),
+.creative-hover-container:hover .creative-icon:nth-child(19) {
   animation-name: bubble-diagonal-left;
   animation-delay: 2.2s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(20),
-.about-header h2:hover~.creative-icon:nth-child(20),
-.about-header .head2:hover~.creative-icon:nth-child(20),
-.about-header .head3:hover~.creative-icon:nth-child(20),
-.about-header .text1:hover~.creative-icon:nth-child(20),
-.about-header .text2:hover~.creative-icon:nth-child(20),
-.about-header .text3:hover~.creative-icon:nth-child(20) {
+.creative-hover-container:hover .creative-icon:nth-child(20),
+.creative-hover-container:hover .creative-icon:nth-child(20),
+.creative-hover-container:hover .creative-icon:nth-child(20),
+.creative-hover-container:hover .creative-icon:nth-child(20),
+.creative-hover-container:hover .creative-icon:nth-child(20),
+.creative-hover-container:hover .creative-icon:nth-child(20),
+.creative-hover-container:hover .creative-icon:nth-child(20) {
   animation-name: bubble-up-far-right;
   animation-delay: 2.8s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(21),
-.about-header h2:hover~.creative-icon:nth-child(21),
-.about-header .head2:hover~.creative-icon:nth-child(21),
-.about-header .head3:hover~.creative-icon:nth-child(21),
-.about-header .text1:hover~.creative-icon:nth-child(21),
-.about-header .text2:hover~.creative-icon:nth-child(21),
-.about-header .text3:hover~.creative-icon:nth-child(21) {
+.creative-hover-container:hover .creative-icon:nth-child(21),
+.creative-hover-container:hover .creative-icon:nth-child(21),
+.creative-hover-container:hover .creative-icon:nth-child(21),
+.creative-hover-container:hover .creative-icon:nth-child(21),
+.creative-hover-container:hover .creative-icon:nth-child(21),
+.creative-hover-container:hover .creative-icon:nth-child(21),
+.creative-hover-container:hover .creative-icon:nth-child(21) {
   animation-name: bubble-up-right;
   animation-delay: 3.3s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(22),
-.about-header h2:hover~.creative-icon:nth-child(22),
-.about-header .head2:hover~.creative-icon:nth-child(22),
-.about-header .head3:hover~.creative-icon:nth-child(22),
-.about-header .text1:hover~.creative-icon:nth-child(22),
-.about-header .text2:hover~.creative-icon:nth-child(22),
-.about-header .text3:hover~.creative-icon:nth-child(22) {
+.creative-hover-container:hover .creative-icon:nth-child(22),
+.creative-hover-container:hover .creative-icon:nth-child(22),
+.creative-hover-container:hover .creative-icon:nth-child(22),
+.creative-hover-container:hover .creative-icon:nth-child(22),
+.creative-hover-container:hover .creative-icon:nth-child(22),
+.creative-hover-container:hover .creative-icon:nth-child(22),
+.creative-hover-container:hover .creative-icon:nth-child(22) {
   animation-name: bubble-up-far-left;
   animation-delay: 3.9s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(23),
-.about-header h2:hover~.creative-icon:nth-child(23),
-.about-header .head2:hover~.creative-icon:nth-child(23),
-.about-header .head3:hover~.creative-icon:nth-child(23),
-.about-header .text1:hover~.creative-icon:nth-child(23),
-.about-header .text2:hover~.creative-icon:nth-child(23),
-.about-header .text3:hover~.creative-icon:nth-child(23) {
+.creative-hover-container:hover .creative-icon:nth-child(23),
+.creative-hover-container:hover .creative-icon:nth-child(23),
+.creative-hover-container:hover .creative-icon:nth-child(23),
+.creative-hover-container:hover .creative-icon:nth-child(23),
+.creative-hover-container:hover .creative-icon:nth-child(23),
+.creative-hover-container:hover .creative-icon:nth-child(23),
+.creative-hover-container:hover .creative-icon:nth-child(23) {
   animation-name: bubble-diagonal-right;
   animation-delay: 4.7s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(24),
-.about-header h2:hover~.creative-icon:nth-child(24),
-.about-header .head2:hover~.creative-icon:nth-child(24),
-.about-header .head3:hover~.creative-icon:nth-child(24),
-.about-header .text1:hover~.creative-icon:nth-child(24),
-.about-header .text2:hover~.creative-icon:nth-child(24),
-.about-header .text3:hover~.creative-icon:nth-child(24) {
+.creative-hover-container:hover .creative-icon:nth-child(24),
+.creative-hover-container:hover .creative-icon:nth-child(24),
+.creative-hover-container:hover .creative-icon:nth-child(24),
+.creative-hover-container:hover .creative-icon:nth-child(24),
+.creative-hover-container:hover .creative-icon:nth-child(24),
+.creative-hover-container:hover .creative-icon:nth-child(24),
+.creative-hover-container:hover .creative-icon:nth-child(24) {
   animation-name: bubble-up-center;
   animation-delay: 5.2s;
 }
 
-.about-header img:hover~.creative-icon:nth-child(25),
-.about-header h2:hover~.creative-icon:nth-child(25),
-.about-header .head2:hover~.creative-icon:nth-child(25),
-.about-header .head3:hover~.creative-icon:nth-child(25),
-.about-header .text1:hover~.creative-icon:nth-child(25),
-.about-header .text2:hover~.creative-icon:nth-child(25),
-.about-header .text3:hover~.creative-icon:nth-child(25) {
+.creative-hover-container:hover .creative-icon:nth-child(25),
+.creative-hover-container:hover .creative-icon:nth-child(25),
+.creative-hover-container:hover .creative-icon:nth-child(25),
+.creative-hover-container:hover .creative-icon:nth-child(25),
+.creative-hover-container:hover .creative-icon:nth-child(25),
+.creative-hover-container:hover .creative-icon:nth-child(25),
+.creative-hover-container:hover .creative-icon:nth-child(25) {
   animation-name: bubble-diagonal-left;
   animation-delay: 0.6s;
 }
@@ -522,7 +510,7 @@ body::-webkit-scrollbar {
 
 .cv-download-button {
   position: absolute;
-  bottom: -650px;
+  bottom: -720px;
   margin-bottom: 150px;
   right: auto;
   z-index: 2;
