@@ -545,3 +545,10 @@ ul li:hover i {
   height: 40px;
 }
 
+/* LinkedIn Logo beim Hover austauschen - schwarzes Logo ohne Transparenz */
+.linkedin-container:hover img {
+  content: url('./assets/icons8-linkedin-250-black.png');
+  opacity: 1;
+  /* Schwarzes Logo voll sichtbar */
+}
+
