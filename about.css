@@ -487,7 +487,7 @@ body::-webkit-scrollbar {
   position: absolute;
   bottom: -580px;
   margin-bottom: 150px;
-  left: calc(50% - 120px);
+  left: calc(50% - 180px);
   z-index: 10;
   padding: 10px 20px;
   font-size: 0.8em;
@@ -512,7 +512,7 @@ body::-webkit-scrollbar {
   position: absolute;
   bottom: -580px;
   margin-bottom: 150px;
-  left: calc(50% + 20px);
+  left: calc(50% + 40px);
   z-index: 10;
   padding: 10px 20px;
   font-size: 0.8em;
