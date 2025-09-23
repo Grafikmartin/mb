@@ -510,7 +510,7 @@ body::-webkit-scrollbar {
 
 .cv-download-button {
   position: absolute;
-  bottom: -650px;
+  bottom: -720px;
   margin-bottom: 300px;
   right: auto;
   z-index: 10;
