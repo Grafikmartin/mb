@@ -597,6 +597,22 @@ footer .portfolio-info {
   --index: 3;
 }
 
+/* Spezifische Stile für das Architektur-Logo */
+.card:nth-child(4) .img {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:nth-child(4) .img img {
+  object-fit: contain;
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  max-height: 90%;
+}
+
 .card:nth-child(5) {
   --index: 4;
 }
