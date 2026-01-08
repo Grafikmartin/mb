@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quizzly Bears</title>
-    <link rel="stylesheet" href="QuizzlyBears.css">
+    <title>Architektur-Seite mit Angular</title>
+    <link rel="stylesheet" href="ArchitekturM.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/favicon.png" sizes="64x64">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -27,46 +27,36 @@
         </nav>
     </header>
     <div class="wetter-header">
-        <h2 class="wetter-h2">Quizzly Bears</h2>
+        <h2 class="wetter-h2">Architektur M</h2>
         <p class="beschreibung">
-            <strong>Quizzly Bears</strong> ist mein umfassendes Abschlussprojekt an der DCI, das ich im
-            <strong>5-köpfigen Team</strong> entwickelt habe: eine <strong>interaktive Quiz-App</strong> der nächsten
-            Generation.
-            Die App vereint <strong>KI-generierte Inhalte</strong> mit spielerischen Gamification-Elementen. Nutzer
-            können sich in selbstgewählten Themengebieten herausfordern oder aus einer Vielzahl vordefinierter
-            Kategorien wählen.<br><br>
-
-            <strong>Technische Umsetzung:</strong><br>
-            - <strong>Frontend:</strong> Mobile App mit React Native & TypeScript<br>
-            - <strong>Backend:</strong> Node.js mit MongoDB<br>
-            - <strong>Features:</strong> Gamification-System (Punkte, Medaillen, Ranglisten), detaillierte Statistiken,
-            modernes UI/UX-Design<br><br>
-
-            <strong>Quizzly Bears Website – Technische Übersicht:</strong><br>
-            Die Projektseite habe ich mit <strong>React und TypeScript</strong> entwickelt und über <strong>GitHub Pages</strong> deployt. Selbstverständlich ist sie <strong>responsiv</strong> und bietet ein <strong>responsives Design</strong> (Mobile-first, CSS Grid & Flexbox), <strong>Mehrsprachigkeit</strong> (DE/EN via Context API) und <strong>Scroll-Animationen</strong> mit der Intersection Observer API.<br><br>
-            
-            Besondere Features sind ein <strong>CSS-only iPhone-Rahmen</strong> für Video-Demos, ein <strong>Video-Background</strong> in der Hero-Sektion und <strong>mehrsprachige SEO-Struktur</strong>. Performance wurde durch <strong>WebP-Bilder</strong>, Minification und Gzip optimiert.<br><br>
-            
-            Das Design ist auf die App abgestimmt und sorgt mit einheitlichen Farben, Typografie und konsistenten Abständen für ein stimmiges Gesamtbild. <strong>TypeScript</strong>, ESLint und modulare Komponenten sorgen für sauberen, wartbaren Code.
-        </p>
+            ARCHITEKTUR M ist mein selbstständig erarbeitetes Projekt, das ich mit
+            Angular 21 entwickelt habe – einer Technologie, die nicht Teil des Lehrplans war.
+            Der Standard war React.<br><br>
+          
+            Technische Umsetzung:<br>
+            - Frontend: Angular 21 mit TypeScript, Standalone Components<br>
+            - State Management: Angular Signals<br>
+            - Routing: Hash-based Routing für GitHub Pages<br>
+            - Styling: CSS Custom Properties (Design Tokens), responsive Design<br>
+            - Deployment: GitHub Pages mit Custom 404-Fallback<br><br>
+          
+            Besondere Features:<br>
+            Modulares Komponentensystem, responsive Mobile-first Design, CSS-Animationen, Material Icons,
+            separate Impressum/Datenschutz-Seiten, TypeScript mit Strict Mode.
+          </p>
         <div class="video-container">
-            <video src="./videos/QB-hintergrund.mp4" autoplay loop muted></video>
-            <img src="./assets/handy-roh.webp" alt="Quizzly Bears Mobile App" class="handy-overlay" />
-            <button id="livedemo">Zur Webseite</button>
+            <video src="./assets/ArchitekturM/ArchitekturM.mov" autoplay loop muted></video>
+ <button id="livedemo">Zur Webseite</button>
         </div>
 
 
 
         <h3 class="text1">Technologien & Framworks</h3>
         <div class="Technologie">
-            <div class="box" id="Logo1"><span><img src="./assets/ReactNative.png" alt="React Native"></span></div>
+            <div class="box" id="Logo1"><span><img src="./assets/techniken/Angular_gradient_logo.png" alt="Angular"></span></div>
             <div class="box" id="Logo2"><span><img src="./assets/techniken/typerscript.png" alt="TypeScript"></span>
             </div>
-            <div class="box" id="Logo3"><span><img src="./assets/expo.png" alt="Expo"></span></div>
-            <div class="box" id="Logo4"><span><img src="./assets/MongoDB.png" alt="MongoDB"></span></div>
-            <div class="box" id="Logo5"><span><img src="./assets/Clerk.png" alt="Clerk"></span></div>
-            <div class="box" id="Logo6"><span><img src="./assets/nodeJS.png" alt="Node.js"></span></div>
-            <div class="box" id="Logo7"><span><img src="./assets/techniken/figma.png" alt="Figma"></span></div>
+            
         </div>
 
         <!-- Container für die Beschreibungstexte -->
@@ -91,15 +81,8 @@
             document.addEventListener('DOMContentLoaded', function () {
                 // Beschreibungstexte für jedes Logo mit fett formatierten Überschriften
                 const descriptions = {
-                    'Logo1': '<strong>React Native</strong><br>Ein Framework für die Entwicklung mobiler Apps mit React. React Native ermöglicht es, native Mobile Apps für iOS und Android mit JavaScript und React zu erstellen. Die App nutzt echte native Komponenten und bietet eine performante und plattformspezifische Benutzererfahrung.',
+                    'Logo1': '<strong>Angular</strong><br>Ein TypeScript-basiertes Web-Framework von Google für die Entwicklung von Single-Page-Anwendungen. Angular bietet eine umfassende Lösung mit Dependency Injection, Routing, State Management und einer mächtigen Template-Syntax. Mit Standalone Components und Signals bietet Angular 21 moderne Entwicklungsmuster für skalierbare Webanwendungen.',
                     'Logo2': '<strong>TypeScript</strong><br>Eine von Microsoft entwickelte Programmiersprache, die JavaScript um statische Typisierung erweitert. TypeScript verbessert die Entwicklerproduktivität durch bessere IDE-Unterstützung, Fehlerprävention zur Compile-Zeit und erleichtert die Wartung großer Codebasen.',
-                    'Logo3': '<strong>Expo</strong><br>Eine Plattform und ein Framework für die Entwicklung von React Native Apps. Expo vereinfacht die Mobile-App-Entwicklung durch vorgefertigte APIs, Tools und Services. Es ermöglicht schnelles Prototyping und Deployment ohne native Entwicklungsumgebung.',
-                    'Logo4': '<strong>MongoDB</strong><br>Eine NoSQL-Dokumentendatenbank, die Daten in flexiblen, JSON-ähnlichen Dokumenten speichert. MongoDB bietet hohe Performance, einfache Skalierbarkeit und ist ideal für moderne Anwendungen mit komplexen Datenstrukturen wie Quiz-Apps.',
-                    'Logo5': '<strong>Clerk</strong><br>Eine moderne Authentifizierungsplattform, die komplette Benutzerverwaltung als Service bietet. Clerk vereinfacht die Implementierung von Login, Registrierung, Passwort-Reset und Benutzerprofilen mit vorgefertigten UI-Komponenten.',
-                    'Logo6': '<strong>Node.js</strong><br>Eine JavaScript-Laufzeitumgebung für Server-seitige Entwicklung. Node.js ermöglicht es, JavaScript außerhalb des Browsers zu verwenden und eignet sich perfekt für den Aufbau schneller, skalierbarer Netzwerkanwendungen und APIs.',
-                    'Logo7': '<strong>Figma</strong><br>Ein browserbasiertes Design-Tool für UI/UX-Design und Prototyping. Figma ermöglicht kollaboratives Design in Echtzeit und wurde für die Konzeption, das Design und die Prototypenerstellung der Quizzly Bears App verwendet.',
-
-
                 };
 
                 const boxes = document.querySelectorAll('.box');
@@ -153,7 +136,7 @@
 
                 // Nach einer kurzen Verzögerung zur Website weiterleiten
                 setTimeout(function () {
-                    window.open('https://grafikmartin.github.io/quizzlybears/', '_blank');
+                    window.open('https://grafikmartin.github.io/architektur-m', '_blank');
                 }, 800); // 800ms Verzögerung, damit der Nutzer die Animation sieht
             });
 
