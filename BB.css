@@ -138,6 +138,24 @@ nav {
   line-height: 1.5;
 }
 
+.beschreibung-bild {
+  display: block;
+  max-width: 200px;
+  width: 45vw;
+  height: auto;
+  margin: 0 auto 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 480px) {
+  .beschreibung-bild {
+    max-width: 160px;
+    width: 55vw;
+    margin: 0 auto 18px;
+  }
+}
+
 /* -----------------------------------------------------
    5. Video-Container & Button
 ------------------------------------------------------ */
