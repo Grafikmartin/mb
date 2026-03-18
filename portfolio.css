@@ -243,6 +243,31 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.5);
   margin-bottom: 1vh;
 }
+
+/* PetTierio: Text darf umbrechen + Logo mit seitlichem Luftpolster */
+.pet-tierio-card h3 {
+  white-space: normal;
+  line-height: 1.25;
+  font-size: 0.55rem;
+  padding: 6px 14px;
+}
+
+.pet-tierio-card .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pet-tierio-logo {
+  width: 82%;
+  height: 82%;
+  object-fit: contain;
+  object-position: center;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 .card::before {
   content: '';
   position: absolute;
@@ -571,7 +596,7 @@ footer .portfolio-info {
 
 /* Portfolio Cards - CSS Custom Properties */
 .inner {
-  --quantity: 10;
+  --quantity: 11;
 }
 
 .card {
@@ -638,6 +663,11 @@ footer .portfolio-info {
 .card:nth-child(10) {
   --index: 9;
   --color-card: 204, 142, 252;
+}
+
+.card:nth-child(11) {
+  --index: 10;
+  --color-card: 142, 252, 157;
 }
 
 /* Content div - versteckt standardmäßig */
