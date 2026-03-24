@@ -130,6 +130,23 @@ nav {
   margin-bottom: 30px;
 }
 
+/* VETTIERIO: Hero-Logo über der Beschreibung */
+.vettierio-hero-logo {
+  display: block;
+  width: min(260px, 72vw);
+  height: auto;
+  margin: 100px auto 24px auto;
+}
+
+/* VETTIERIO: hervorgehobene erste Zeile */
+.vettierio-lead {
+  display: block;
+  font-size: clamp(1.12rem, 2.8vw, 1.42rem);
+  font-weight: 600;
+  line-height: 1.45;
+  color: chocolate;
+}
+
 .beschreibung {
   color: white;
   font-size: 0.9rem;
