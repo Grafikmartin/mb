@@ -30,27 +30,54 @@
     <div class="wetter-header">
         <img class="vettierio-hero-logo" src="./assets/VETTIERIO/vettierio.svg" alt="VETTIERIO" />
         <p class="beschreibung">
-            <span class="vettierio-lead">Mein aktuelles Projekt, in das ich jede freie Minute stecke:</span>
+            <strong>VETTIERIO – kurz für Technik-Interessierte</strong>
             <br><br>
-            VETTIERIO ist eine webbasierte Anwendung zur Verwaltung der Gesundheit von Haustieren – mit dem Ziel, alle wichtigen Informationen an einem Ort zu bündeln und gleichzeitig dem emotionalen Wert dieser Begleiter gerecht zu werden.
+            <strong>Wozu es da ist</strong><br>
+            VETTIERIO ist eine webbasierte Haustier-Gesundheitsakte: Termine, Erinnerungen, Gewicht, Ernährung, Verdauung, Beobachtungen, Symptome, Medikamente, Impfungen, Parasiten, Zyklus, Notizen, Dokumente und ein Gesundheitskalender – alles pro Tier, optional geteilt mit anderen Betreuern. Zielgruppe sind Tierhalter, die den Überblick behalten wollen, ohne Werbung; ein kostenloser und ein Premium-Umfang unterscheiden sich vor allem bei Mehr-Tier-Betrieb, E-Mail-Erinnerungen, PDF-Export, Dokumenten-Upload und Teilen.
             <br><br>
-            Nutzer können mehrere Tiere anlegen und Gesundheitsdaten wie Gewicht, Impfungen, Medikamente und Termine strukturiert erfassen. Eine übersichtliche Timeline, intelligente Erinnerungen sowie der Upload von Dokumenten helfen dabei, im Alltag nichts zu vergessen und jederzeit den Überblick zu behalten.
+            <strong>Frontend</strong><br>
+            Single-Page-App mit React 19 und Vite (schneller Dev-Server, produktions-Build nach dist/).<br>
+            Client-seitiges Routing (React Router): Dashboard, Tierakte, Login, Einstellungen, Marketing-Seite „Für Tierfreunde“ usw.<br>
+            PWA-tauglich: Service Worker für Web-Push; nutzbar im Browser und als „App zum Startbildschirm“.<br>
+            UI: eigene Komponenten + CSS (Themes z. B. Standard/Comic), Charts mit Recharts, PDF-Export clientseitig (jsPDF), Dokumentvorschau (PDF.js).
             <br><br>
-            Ein besonderes Feature ist die Möglichkeit, ein Tier mit mehreren Personen zu teilen. So können z. B. Familienmitglieder gemeinsam Einträge erstellen und den Gesundheitsverlauf pflegen – alles bleibt zentral, nachvollziehbar und immer aktuell.
+            <strong>Backend-as-a-Service (BaaS)</strong><br>
+            Zentrale Plattform: Authentifizierung, NoSQL-Datenbank (Firestore), Datei-Storage, Hosting der statischen App, Cloud Functions (Serverless in europe-west1) und Cloud Messaging für Push.<br><br>
+            Datenmodell grob: Nutzerprofile in users, Tiere in pets, Gesundheitseinträge und Erinnerungen in typisierten Collections, Push-Tokens pro Gerät unter users/{uid}/pushTokens. Zugriff über Security Rules (clientseitig nur erlaubte Lese/Schreib-Pfade).
             <br><br>
-            Besonders wichtig ist mir dabei auch der respektvolle Umgang mit der gemeinsamen Zeit: Tiere können in den sogenannten <strong>„Kuschelhimmel“</strong> überführt werden – ein liebevoll gestalteter Bereich, in dem alle Erinnerungen und Daten erhalten bleiben.
+            <strong>Login &amp; Konto</strong><br>
+            E-Mail + Passwort (klassische Session über den Auth-Dienst des BaaS).<br>
+            Passwortlos per Magic Link (Einmal-Link per E-Mail, Fortsetzung auf /login).<br>
+            Federated Login über OAuth (Google; auf Safari oft Redirect statt Popup).<br>
+            Passwort zurücksetzen, Konto löschen inkl. Bereinigung von Push-Tokens und geteilten Zugriffen.<br>
+            Nach Login: Echtzeit-Sync des Profils (Plan Free/Premium) aus Firestore.
             <br><br>
-            Zusätzlich ermöglicht ein PDF-Export den einfachen Zugriff auf die komplette Tierakte, z. B. für Tierarztbesuche.
+            <strong>Push-Benachrichtigungen</strong><br>
+            Im Browser: Web-Push über FCM (Firebase Cloud Messaging) + VAPID-Schlüssel; Token wird in Firestore gespeichert.<br>
+            Versand: zeitgesteuerte Cloud Functions lesen fällige Erinnerungen und senden Data-Push an alle registrierten Geräte des Nutzers (Zeitzone Europe/Berlin, Fensterlogik gegen Doppel-Sends).<br>
+            Hinweis: iOS/Safari ist bei Web-Push oft eingeschränkt; Android/Desktop zuverlässiger.
             <br><br>
-            <strong>Meine Rolle:</strong><br>
-            Konzept, Design und Entwicklung
+            <strong>E-Mail</strong><br>
+            Transaktionaler E-Mail-Dienst per HTTP-API (Resend im Backend, API-Key als Secret).<br>
+            Geplant: Erinnerungs-Mails (Scheduler-Functions), Test- und Diagnose-Endpunkte; Inhalte mehrsprachig aus JSON-Templates.<br>
+            Premium-Feature: E-Mail-Erinnerungen zusätzlich zu In-App/Push.
             <br><br>
-            <strong>Technologien:</strong><br>
-            React, Firebase (Auth, Firestore, Storage)
+            <strong>Premium &amp; Zahlungen</strong><br>
+            Zahlungsdienst-Integration (Checkout, Abos, Kundenportal, Webhooks) über serverseitige Functions – Status landet im Nutzerprofil (plan: premium).<br>
+            Webhook verarbeitet Abo-Events und schaltet Features frei; Rückkehr-URLs hängen an einer konfigurierten APP_URL (Produktions-Domain).
             <br><br>
-            <strong>Highlights:</strong><br>
-            Gemeinsame Verwaltung von Tieren durch mehrere Nutzer, PDF-Export, Bild-Upload mit Crop, Erinnerungslogik, emotional gestalteter Archivbereich („Kuschelhimmel“)
-            </p>
+            <strong>Weitere Technik-Highlights</strong><br>
+            Tierakte teilen: Einladung per E-Mail, Rechte auf Pet-Dokumente, Profilauflösung per Callable Function.<br>
+            Dokumente: Upload in Object Storage (BaaS Storage) mit CORS; Metadaten in Firestore.<br>
+            PDF-Export: größtenteils im Browser generiert (Rubrik-Farben, Tabellen, Charts).<br>
+            Interner Support-Bereich („Kundendienst“): Lesen von Nutzer-, Abo-, Push- und Speicher-Daten zur Diagnose.
+            <br><br>
+            <strong>Entwicklung &amp; Betrieb</strong><br>
+            Versionskontrolle mit git; Build npm run build, Deploy Frontend auf BaaS-Hosting (SPA-Rewrite auf index.html), Functions separat deployen.<br>
+            Region und Secrets (E-Mail-API, Zahlungs-Webhook, App-URL) sind Teil der Serverless-Konfiguration.
+            <br><br>
+            <strong>In einem Satz:</strong> VETTIERIO ist eine React-SPA auf einem BaaS-Stack (Auth, Firestore, Storage, Functions, Messaging, Hosting), die Tiergesundheit strukturiert speichert und über Web-Push, E-Mail-API und optional Abo-Zahlungen im Alltag unterstützt.
+        </p>
         <div class="video-container">
             <img class="vettierio-bg" src="./assets/PetTierio/Pets.png" alt="Pets" />
             <button id="livedemo">Zur Webseite</button>
@@ -212,7 +239,7 @@
 
                 // Nach einer kurzen Verzögerung zur Website weiterleiten
                 setTimeout(function () {
-                    window.open('https://vettiero.vercel.app/', '_blank');
+                    window.open('https://www.vettierio.de/fuer-tierfreunde', '_blank');
                 }, 800); // 800ms Verzögerung, damit der Nutzer die Animation sieht
             });
 
